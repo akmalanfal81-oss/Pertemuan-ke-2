@@ -8,13 +8,21 @@
     </head>
     <body>
         <!--Judul Halaman atau Bagian -->
-        <h1>Profil Mahasiswa</h1>
+        <h1>PROFIL MAHASISWA</h1>
 
         <!--Subjudul untuk Bagian Biografi -->
         <h2>Biografi</h2>
-        <!-- Paragraf Biografi -->
-         <p>Saya adalah mahasiswa yang mempelajarai Ilmu Komputer di Universitas pendidikan nasional. Saya memiliki ketertarikan dalam pengembangan web dan ingin memperdalam pengetahuan dalam HTML dan CSS.</p>
+        <!--Foto Berdampingan & Nama Mahasiswa-->
+        <div style="display: flex; align-items: center; gap: 20px;">
+             <!--Gambar profil-->
+            <img src="foto akmal.jpg" alt="Foto Profil Mochammad Akmal Anfal" width="125">
 
+            <!--Nama Mahasiswa & Paragraf Biografi-->
+            <div>
+            <h2>Mochammad Akmal Anfal</h2>
+            <p>Saya adalah mahasiswa yang mempelajarai Ilmu Komputer di Universitas pendidikan nasional. Saya memiliki ketertarikan dalam pengembangan web dan ingin memperdalam pengetahuan dalam HTML dan CSS.</p>
+            </div>
+        </div>
          <!--Subjudul untuk Pendidikan-->
          <h2>Pendidikan</h2>
          <p>Saat ini saya menempuh semester ketiga di jurusan Ilmu Komputer. Saya mengambil kursus tentang dasar-dasar pengembangan web untuk meningkatkan keterampilan saya dalam bidang ini</p>
@@ -22,7 +30,7 @@
     <body>
         <!-- Menggunakan HyperLink-->
          <h2>Kontak Saya</h2>
-         <p>Anda dapat menghubungi saya melalui email di <a href="Akmalanfal81@gmail.com">Akmalanfal81@gmail.com</a>.</p>
+         <p>Anda dapat menghubungi saya melalui alamat email di <a href="Akmalanfal81@gmail.com">Akmalanfal81@gmail.com</a>.</p>
 
          <!-- Menambahkan Gambar -->
           <h2>Proyek Terakhir</h2>
@@ -30,71 +38,67 @@
           <img src="images.jpeg" alt="Deskripsi Proyek Terakhir">
 
           <!-- Hyperlink ke dokumen eksternal -->
-           <p>Untuk informasi lebih lanjut, kunjungi <a href="https://github.com/" target="_blank">website saya</a>.</p>
-    </body>
-    <body>
-        <!-- Unordered List untuk menampilkan daftar hobi -->
-         <h2>Hobi Saya</h2>
-         <ul>
-            <li>Bermain Hp</li>
-            <li>Belajar</li>
-            <li>Bermain laptop</li>
-         </ul>
-
-         <!-- Ordered List untuk menampilkan proses pendidikan -->
-          <h2>Riwayat Pendidikan</h2>
-          <ol>
-            <li>SD Muhammadiyah 2</li>
-            <li>SMP Nasional</li>
-            <li>SMK Teknologi Nasional</li>
-          </ol>
+           <p>Untuk informasi lebih lanjut, kunjungi di media sosial kami melalui berikut: <a href="https://github.com/" target="_blank">website saya</a>.</p>
     </body>
     <body>
         <!-- Tabel Jadwal Kuliah -->
-         <h2>Jadwal Kuliah Semester</h2>
+         <h2>Riwayat Pendidikan</h2>
+         <table border="1" cellpadding="5" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Jenjang</th>
+                <th>Nama Institusi</th>
+                <th>Tahun</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tk</td>
+                <td>TK Al-Amin</td>
+                <td>2009 - 2010</td>
+            </tr>
+            <tr>
+                <td>SD</td>
+                <td>SD Muhammadiyah 2 Denpasar</td>
+                <td>2010 - 2013</td>
+            </tr>
+            <tr>
+                <td>SMP</td>
+                <td>SMP Nasional Denpasar</td>
+                <td>2019 - 2022</td>
+            </tr>
+            <tr>
+                <td>SMK</td>
+                <td>SMK Teknologi Nasional Denpasar</td>
+                <td>2022 - 2024</td>
+            </tr>
+            <tr>
+                <td>Universitas</td>
+                <td>Universitas Pendidikan Nasional</td>
+                <td>2024 - Sekarang</td>
+            </tr>
+        </tbody>
+        </table>
          <table border=""1">
             <tr>
-                <th>Hari</th>
-                <th>Mata Kuliah</th>
-                <th>Waktu</th>
-            </tr>
-            <tr>
-                <td>Senin</td>
-                <td>Pengantar Kecerdasan Buatan, Konfigurasi dan Administrasi Jaringan</td>
-                <td>08:00 - 10:00, 11:00 - 14:20</td>
-            </tr>
-            <tr>
-                <td>Selasa</td>
-                <td>Anti Korupsi, Pengantar Kecerdasan Buatan</td>
-                <td>08:00 - 10:00, 11:00 - 14:20</td>
-            </tr>
-            <tr>
-                <td>Rabu</td>
-                <td>Pengantar Kecerdasan Buatan, Pemograman Web</td>
-                <td>08:00 - 10:30, 11:50 - 15:10</td>
-            </tr>
-            <tr>
-                <td>Kamis</td>
-                <td>Pengantar Kecerdasan Buatan, Konfigurasi dan Administrasi Jaringan</td>
-                <td>08:00 - 10:00, 11:00 - 14:20</td>
-            </tr>
+                
         </table>
     </body>
     <body>
         <!-- Formulir Kontak -->
-         <h2?Formulir Kontak</h2>
-        <form action=""Submit_form.php" method="post">
-        <label for="Mochammad Akmal Anfal>Nama Lengkap:</label>
-        <input type=""text" id=""name" name=""fullname" required><br><br>
+    <h2>Formulir Kontak</h2>
+    <form action="Submit_form.php" method="post">
+        <label for="fullname">Nama Lengkap:</label><br>
+        <input type="text" id="fullname" name="fullname" required><br><br>
 
-        <label for=""email">Email:</label>
-        <input type=""email" id=""email" name=""emailaddr" required><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
 
-        <label for=""message">Pesan:</label>
-        <textarea id=""message" name=""usermessage" rows="4"
-    required><</textarea><br><br>
+        <label for="message">Pesan:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br><br>
 
-        <button type="submit">Kirim<</button>
+        <button type="submit">Kirim</button>
+
         </form>
     </body>
 </html>
